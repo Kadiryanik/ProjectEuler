@@ -14,8 +14,7 @@ for i in range(2, UPLIMIT):
 result = 1
 for i in range(2, UPLIMIT):
 	if vals[i] != 0:
-		a = 1
-		#print (str(i) + "->" + str(vals[i]))
+		print (str(i) + "->" + str(vals[i]))
 	for j in range(0, vals[i]):
 		result = result * (i)
 
