@@ -1,5 +1,7 @@
 # grid size
 UPLIMIT = 20
+UPLIMIT_PRODUCT_2 = UPLIMIT * 2
+
 counter = 0
 
 # initilize the binarys with given UPLIMIT
@@ -15,8 +17,10 @@ for i in xrange(long(startVal, 2), long(endVal, 2) + 1):
 	binary = formatter.format(i)
 
 	# if possible to reach end point increment the counter, print the path
-	if binary.count('0') == binary.count('1'):
+	zeros = binary.count('0')
+	ones = UPLIMIT_PRODUCT_2 - zeros
+	if zeros == ones:
 		counter += 1
-		#print binary
+		# print binary
 
 print counter
