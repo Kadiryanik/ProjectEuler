@@ -1,6 +1,6 @@
-textFile = open("/home/sadnes/Desktop/p022_names.txt", "r")
+textFile = open("p022_names.txt", "r")
 words = sorted(textFile.read().split(","))
-words = [w[1:len(w) -1] for w in words]
+words = [w[1:len(w) -1] for w in words] # "COLIN" -> COLIN
 
 def getSum(n):
 	sum = 0
